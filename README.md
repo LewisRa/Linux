@@ -14,20 +14,16 @@ exactly the same
 Mac users who have explored their hard drives might find Linux a little more familiar this is because Mac's also evolved from a UNIX
 ancestor more specifically BSD. 
 
-**filesystem hierarchy standard or FHS defines the
-structure and layout and is maintained by the Linux Foundation**
-/bin (binaries) these are the most basic binaries which is another word for programs or applications things like LS
+**Filesystem Hierarchy Standard or FHS defines the structure and layout and is maintained by the Linux Foundation**
+
+**/bin (binaries)** these are the most basic binaries which is another word for programs or applications things like LS
 to list your directory  OR cat to display the output of a file and other basic functions are stored here.
 
-sbin are system binaries that a system administrator would use and that a standard user wouldn't have access to without permission
+**/sbin** are system binaries that a system administrator would use and that a standard user wouldn't have access to without permission
 both of these folders contain the files that need to be accessible when running
 in single user mode as opposed to the usual multi-user mode.
 
-single user mode
-is a special mode that boots you in as a root user to allow you to do system
-repairs and upgrades or testing networking is usually disabled in this
-mode because of security issues when you install a program in Linux it's
-typically not placed in these folders 
+Single user mode is a special mode that boots you in as a root user to allow you to do system repairs and upgrades or testing networking is usually disabled in this mode because of security issues when you install a program in Linux it's typically not placed in these folders 
 
 **/boot** is a folder you don't want to play around in it contains everything your OS needs to boot in other words your boot loaders live here. 
 
