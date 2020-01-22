@@ -1,7 +1,5 @@
 # Linux
 
-C Drive
-Program Files where's the directory that Linux is installed in 
 
 Windows and Linux evolved in very different ways.Once upon a time there was a thing called ms-dos the disk operating system
 it was command-line only but you could still run programs games and WordPerfect but you didn't need Windows. Windows was added to PCs and you can install it on top of DOS you would start up your computer and type in win to start
@@ -31,25 +29,23 @@ repairs and upgrades or testing networking is usually disabled in this
 mode because of security issues when you install a program in Linux it's
 typically not placed in these folders 
 
-/boot is a folder you don't want to play around in it contains everything your OS needs to boot in other words your boot loaders live here. 
+**/boot** is a folder you don't want to play around in it contains everything your OS needs to boot in other words your boot loaders live here. 
 
-/dev this is where your devices live Linux. Following UNIX has a standard, everything is a file. In /dev, you will find your hardware. A disk,for example, would be /dev/sda and a partition on that disk would be for example /dev/sda1, /dev/sda2 etc. You can also find everything else here from your webcam to your keyboard. This is typically an area that applications and drivers will access and is rarely something a user should be dabbling in
+**/dev** is where your devices live Linux. Following UNIX has a standard, everything is a file. In /dev, you will find your hardware. A disk,for example, would be /dev/sda and a partition on that disk would be for example /dev/sda1, /dev/sda2 etc. You can also find everything else here from your webcam to your keyboard. This is typically an area that applications and drivers will access and is rarely something a user should be dabbling in
 
-/etc This folder is where all your system wide configurations are stored such as apt. In the  /etc/apt, for example, you would find the list of all your sources and repos your system connects to as well as its various settings so if you're
+**/etc** This folder is where all your system wide configurations are stored such as apt. In the  /etc/apt, for example, you would find the list of all your sources and repos your system connects to as well as its various settings so if you're
 looking for something that is a system-wide application and not a per
 user setting for example Libre Office would have settings in each user's
 folder and it wouldn't be system-wide because each user can have different
 settings.
 
-/home
-
-/lib folders (/lib, /lib32,/lib64) are where the libraries are stored. Libraries are files that applications can use to perform various functions. They're
+**/lib** folders (/lib, /lib32,/lib64) are where the libraries are stored. Libraries are files that applications can use to perform various functions. They're
 required by the binaries in /bin and /sbin for example.
 
-/media and /MNT(mount) are the directories are where you would find your other mounted drives. It can be a floppy disk, USB stick, external hard drive, network drive or, a second hard drive. The media folder wasn't always around it was
+**/media and /MNT(mount)** are the directories are where you would find your other mounted drives. It can be a floppy disk, USB stick, external hard drive, network drive or, a second hard drive. The media folder wasn't always around it was
 typically just MNT and that's where you mounted your storage devices.But now,  if you're mounting things manually use the MNT directory and leave the media 
 
-/opt = optional folder which is usually where manually installed software from vendors resides. For example is a VPN software that you installed and the drivers foryour printer/scanner. Also used for installing software you've created yourself
+**/opt** = optional folder which is usually where manually installed software from vendors resides. For example is a VPN software that you installed and the drivers foryour printer/scanner. Also used for installing software you've created yourself
 
 /proc is where you'll find pseudo files that contain
 information about system processes and resources. For example, every process will
@@ -57,23 +53,22 @@ have a directory here which contains all kinds of information on that process. F
 you can see all kinds of pseudo files . Psuedo files are not  actually
 files on the system. Psuedo files are the kernel's way of translating other information to appear as files. So, you can open the status file and it'll show me all kinds of information on that kernals process like the time it takes the processes to run.
 
-/root is the root users home folder unlike a user's home folder. It
+**/root** is the root users home folder unlike a user's home folder. It
 does not contain the typical directories inside and it does not reside in the
 home director.You can store files here if you wish but you need root
 permissions to access it. 
 
-/run  runs in RAM which means that everything in it is gone when the system's rebooted or shut down. It's used for processes that
+**/run**  runs in RAM which means that everything in it is gone when the system's rebooted or shut down. It's used for processes that
 start early in the boot procedure to store runtime information that they use
 to function.
 
-/snap is where snap packages are stored and are mainly used
-by Ubuntu 
+**/snap** is where snap packages are stored and are mainly used by Ubuntu 
 
-/SRV is the service directory where service data is stored it'll probably be empty for you but if you run a server such as a web server or FTP server you would store the files that will be accessed by external users here this allows for better
+**/SRV** is the service directory where service data is stored it'll probably be empty for you but if you run a server such as a web server or FTP server you would store the files that will be accessed by external users here this allows for better
 security since it's at the root of the drive and it also allows you to easily
 mount this folder from another hard drive
 
-/sys (system folder) is a way to interact with the
+**/sys (system folder)** is a way to interact with the
 kernel. This directory is similar to the run directory and it's not physically written to the disk it's created every
 time the system boots up so you wouldn't store anything here and nothing gets
 installed here TMP is of course a temp or temporary directory this is where
@@ -83,7 +78,7 @@ regularly save a temporary copy of what you're writing here so that if the
 application crashes it can look here to see if there's a recent saved copy that
 you can recover
 
-/USR folder is the user application space where applications will be
+**/USR folder** is the user application space where applications will be
 installed that are used by the user as opposed to the /bin directory is used by
 the system and system administrator to perform maintenance it's also known as
 the UNIX system resource and any applications installed here are
@@ -111,21 +106,4 @@ in size as you use the system. You'll also find other things in here like
 databases for mail and temporary storage for printer queues also known as the
 spool. 
 
-/home folder is where you store your personal files and documents. Each user has
-their own home folder and each user can only access their own unless they use
-admin permissions. Some users mount the home folder on a different drive or
-different partition which allows you to reinstall your system and preserve your
-files the home folder also contains many different directories which store your
-application settings a hidden directory is simply one that starts with a period
-Linux hides these by default you can view them in the file manager by
-selecting show hidden files or by pressing ctrl H this is of course using
-Nautilus in gnome and some file managers might be different PC man FM is also
-press ctrl H to view hidden files if you're in the terminal and you list
-files it'll only show you what is not hidden unless you specify - a for all
-and now you can see all your hidden files these hidden directory store
-things like cache some applications like a browser used to
-store temporary files other applications might store thumbnails or information
-that will be used over and over repeatedly 
-
-then you have folders like
-config and local which store individual application settings.
+**/home** folder is where you store your personal files and documents. Each user has their own home folder and each user can only access their own unless they use admin permissions. Some users mount the home folder on a different drive or different partition which allows you to reinstall your system and preserve your files the home folder also contains many different directories which store your application settings. A hidden directory is simply one that starts with a period, Linux hides these by default you can view them in the file manager by selecting show hidden files or by pressing ctrl H this is using Nautilus in gnome . If you're in the terminal and you list files, it'll only show you what is not hidden unless you specify - a for all and now you can see all your hidden files these hidden directory store things like cache some applications like a browser used to store temporary files other applications might store thumbnails or information that will be used over and over repeatedly. Also there are folders like config and local which store individual application settings.
